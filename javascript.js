@@ -1,6 +1,6 @@
 function ComputerChoice()
     {
-        let choice = number = Math.floor(Math.random() * 3) + 1
+        let choice = Math.floor(Math.random() * 3) + 1
 
             if (choice == 1)
                 {
