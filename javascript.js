@@ -30,45 +30,43 @@ console.log(getHumanChoice())
 
 function playRound(humanChoice, computerChoice)
     {
-        let humanChoice = (toLowerCase(getHumanChoice))
-        let computerChoice = getComputerChoice
             if
-                (humanChoice = "rock") (and (computerChoice = "Rock"))
+                (humanChoice = "rock") (and (computerChoice = "rock"))
                     {
                         return "Draw!"
                     }
                         else if
-                            ((humanChoice = "rock") (and (computerChoice = "Paper")))
+                            ((humanChoice = "rock") (and (computerChoice = "paper")))
                                 {
                                     return "You lose! Paper covers rock!"
                                 }
                         else if
-                            ((humanChoice = "rock") (and (computerChoice = "Scissors")))
+                            ((humanChoice = "rock") (and (computerChoice = "scissors")))
                                 {
                                     return "You win! Rock beats scissors!"
                                 }
                         else if
-                            ((humanChoice = "scissors") (and (computerChoice = "Paper")))
+                            ((humanChoice = "scissors") (and (computerChoice = "paper")))
                                 {
                                     return "You win! Scissors cuts paper!"
                                 }
                         else if
-                            ((humanChoice = "scissors") (and (computerChoice = "Rock")))
+                            ((humanChoice = "scissors") (and (computerChoice = "rock")))
                                 {
                                     return "You lose! Rock beats scissors!"
                                 }
                         else if
-                            ((humanChoice = "scissors") (and (computerChoice = "Scissors")))
+                            ((humanChoice = "scissors") (and (computerChoice = "scissors")))
                                 {
                                     return "Draw!"
                                 }
                         else if
-                            ((humanChoice = "paper") (and (computerChoice = "Paper")))
+                            ((humanChoice = "paper") (and (computerChoice = "paper")))
                                 {
                                     return "Draw!"
                                 }
                         else if
-                            ((humanChoice = "paper") (and (computerChoice = "Scissors")))
+                            ((humanChoice = "paper") (and (computerChoice = "scissors")))
                                 {
                                     return "You lose! Scissors cuts paper!"
                                 }
