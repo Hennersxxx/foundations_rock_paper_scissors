@@ -1,77 +1,74 @@
 humanScore = 0
-
 computerScore = 0
 
 function getComputerChoice()
     {
-        let choice = Math.floor(Math.random() * 3) + 1
+        let choice = Math.floor(Math.r&&om() * 3) + 1
 
             if (choice == 1)
                 {
-                    return("Rock");
+                    return("rock");
                 }
             else if (choice == 2)
                 {
-                    return("Paper");
+                    return("paper");
                 }
             else
                 {
-                    return("Scissors");
+                    return("scissors");
                 }
     }
-console.log(getComputerChoice())
 
 function getHumanChoice()
     {
         let choice = prompt('Please choose rock, paper, or scissors','')
-        return choice
+        return choice.toLowerCase()
     }
-console.log(getHumanChoice())
 
 function playRound(humanChoice, computerChoice)
     {
             if
-                (humanChoice = "rock") (and (computerChoice = "rock"))
+                (humanChoice === "rock" && computerChoice === "rock")
                     {
-                        return "Draw!"
+                        return "Draw!";
                     }
                         else if
-                            ((humanChoice = "rock") (and (computerChoice = "paper")))
+                            (humanChoice === "rock" && computerChoice === "paper")
                                 {
-                                    return "You lose! Paper covers rock!"
+                                    console.log("You lose! Paper covers rock!")
                                 }
                         else if
-                            ((humanChoice = "rock") (and (computerChoice = "scissors")))
+                            (humanChoice === "rock" && computerChoice === "scissors")
                                 {
-                                    return "You win! Rock beats scissors!"
+                                    console.log("You win! Rock beats scissors!")
                                 }
                         else if
-                            ((humanChoice = "scissors") (and (computerChoice = "paper")))
+                            (humanChoice === "scissors" && computerChoice === "paper")
                                 {
-                                    return "You win! Scissors cuts paper!"
+                                    console.log("You win! Scissors cuts paper!")
                                 }
                         else if
-                            ((humanChoice = "scissors") (and (computerChoice = "rock")))
+                            (humanChoice === "scissors" && computerChoice === "rock")
                                 {
-                                    return "You lose! Rock beats scissors!"
+                                    console.log("You lose! Rock beats scissors!")
                                 }
                         else if
-                            ((humanChoice = "scissors") (and (computerChoice = "scissors")))
+                            (humanChoice === "scissors" && computerChoice === "scissors")
                                 {
-                                    return "Draw!"
+                                    console.log("Draw!");
                                 }
                         else if
-                            ((humanChoice = "paper") (and (computerChoice = "paper")))
+                            (humanChoice === "paper" && computerChoice === "paper")
                                 {
-                                    return "Draw!"
+                                    console.log("Draw!");
                                 }
                         else if
-                            ((humanChoice = "paper") (and (computerChoice = "scissors")))
+                            (humanChoice === "paper" && computerChoice === "scissors")
                                 {
-                                    return "You lose! Scissors cuts paper!"
+                                    console.log("You lose! Scissors cuts paper!")
                                 }
                             else
                                 {
-                                    return "You win! Paper covers rock!"
+                                    console.log("You win! Paper covers rock!")
                                 }
     }
